@@ -486,8 +486,7 @@ accessKey=ce2a18e0-dshs-4c44-4515-9aca67dd706e&amount=0.01&price=10000.00&priceT
 - 下单接口
 
 **请求URL：** 
-- `/api/v1/trade/spot/add`
-  
+- `/v1/trade/spot/add`
 
 **请求方式：**
 - POST 
@@ -534,7 +533,7 @@ accessKey=ce2a18e0-dshs-4c44-4515-9aca67dd706e&amount=0.01&price=10000.00&priceT
 ## 取消订单接口
 
 **请求URL：** 
-- `/api/v1/trade/spot/cancel`
+- `/v1/trade/spot/cancel`
 
 **请求方式：**
 - POST
@@ -576,7 +575,7 @@ accessKey=ce2a18e0-dshs-4c44-4515-9aca67dd706e&amount=0.01&price=10000.00&priceT
 ##  查询单个订单详情接口
 
 **请求URL：**
-- `/api/v1/trade/spot/detail`
+- `/v1/trade/spot/detail`
 
 **请求方式：**
 - GET/POST， 推荐使用POST方式
@@ -668,9 +667,11 @@ details是该订单已经成交的交易，该结构中的字段说明如下：
 ## 根据状态获取订单接口
 
 **请求URL：**
-- `/api/v1/trade/spot/listOrders`
+
+- `/v1/trade/spot/listOrders`
 
 **请求方式：**
+
 - GET/POST， 推荐使用POST方式
 
 **参数：**
@@ -768,7 +769,7 @@ status参数取值如下：
 ## 获取用户balance接口
 
 **请求URL：**
-- `/api/v1/trade/spot/balance`
+- `/v1/trade/spot/balance`
 
 **请求方式：**
 
