@@ -1,0 +1,2 @@
+# APIDocs
+WTZEx API Docs
