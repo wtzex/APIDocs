@@ -500,7 +500,7 @@ accessKey=ce2a18e0-dshs-4c44-4515-9aca67dd706e&amount=0.01&price=10000.00&priceT
 | amount    | 是   | string | 委托量                                   |
 | priceType | 否   | string | 委托类型，目前仅支持限价单LIMIT          |
 | symbol    | 是   | string | 交易对，/替换为-，例如BTC-USDT           |
-| side      | 是   | string | 买卖方向  买：BUY； 卖：SELL             |
+| direction | 是   | string | 买卖方向  买：BUY； 卖：SELL             |
 | no        | 是   | string | request no, 如果带，服务器返回相同的参数 |
 | sign      | 是   | string | 签名                                     |
 
