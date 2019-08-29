@@ -683,8 +683,6 @@ details是该订单已经成交的交易，该结构中的字段说明如下：
 | symbol    | 否   | string | 交易对，如果没有该参数，返回所有交易对         |
 | pageNum   | 否   | int    | 分页, 页码从1开始                              |
 | pageSize  | 否   | int    | 每页返回数量，默认10，最大100                  |
-| side      | 否   | string | 交易方向：BUY， SELL                           |
-| status    | 否   | string | 交易状态                                       |
 | startTime | 否   | long   | 毫秒级时间戳，查询订单创建时间晚于该时间的订单 |
 | endTime   | 否   | long   | 毫秒级时间戳，查询订单创建时间早于该时间的订单 |
 | no        | 是   | string | request no, 如果带，服务器返回相同的参数       |
