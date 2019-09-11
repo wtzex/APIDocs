@@ -353,3 +353,37 @@ K线不提供websocket订阅接口，请使用HTTP接口获取
 
 
 
+
+
+## 取消订阅depth
+
+```
+{
+	"unsub": "market.depth",
+	"symbol": "BTC/USDT"
+}
+```
+
+
+
+
+
+## 取消订阅ticker
+
+```
+{
+	"unsub": "market.ticker"
+}
+```
+
+
+
+## 取消订阅 trade
+
+```
+{
+	"unsub": "market.trade",
+	"symbol": "BTC/USDT"
+}
+```
+
