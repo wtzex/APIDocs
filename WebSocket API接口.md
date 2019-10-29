@@ -163,7 +163,35 @@ symbol是交易对，用_代替/，例如：
 订阅特定交易对的返回：
 
 ```
-{"code":"000000","data":{"BTC/USDT":{"pp":4,"aa":"0.3951","a":"10259.3100","b":"10259.3100","c":"10231.1800","cg":"-101.4900","h":"10410.1600","l":"10155.3400","o":"10332.6700","p":"-0.010","ct":0,"s":"BTC/USDT","t":1566884945807,"v":"2055.3562","vp":4,"to":"21173797.4355","ba":"0.3951"}},"msg":"success","msgType":"sub","respStatus":"ok","sub":"market.ticker","transType":"all"}
+{
+    "code":"000000",
+    "data":{
+        "BTC/USDT":{
+            "pp":4,
+            "aa":"0.3951",
+            "a":"10259.3100",
+            "b":"10259.3100",
+            "c":"10231.1800",
+            "cg":"-101.4900",
+            "h":"10410.1600",
+            "l":"10155.3400",
+            "o":"10332.6700",
+            "p":"-0.010",
+            "ct":0,
+            "s":"BTC/USDT",
+            "t":1566884945807,
+            "v":"2055.3562",
+            "vp":4,
+            "to":"21173797.4355",
+            "ba":"0.3951"
+        }
+    },
+    "msg":"success",
+    "msgType":"sub",
+    "respStatus":"ok",
+    "sub":"market.ticker",
+    "transType":"all"
+}
 ```
 
 
@@ -193,7 +221,94 @@ symbol是交易对，例如：
 全量数据：
 
 ```
-{"code":"000000","data":[{"amount":0.0170,"buyOrderId":"EBL90001033201908271435509944348688","buyTurnover":173.55776000,"direction":"SELL","price":10209.2800,"sellOrderId":"ESL90001033201908271435509943603886","sellTurnover":173.55776000,"symbol":"BTC/USDT","tickerOrderId":"ESL90001033201908271435509943603886","time":1566887751048,"type":"LIMIT_PRICE"},{"amount":0.0022,"buyOrderId":"EBL90001033201908271435483298289932","buyTurnover":22.46162600,"direction":"BUY","price":10209.8300,"sellOrderId":"ESL90001033201908271435483298867217","sellTurnover":22.46162600,"symbol":"BTC/USDT","tickerOrderId":"EBL90001033201908271435483298289932","time":1566887748360,"type":"LIMIT_PRICE"},{"amount":0.0410,"buyOrderId":"EBL90001033201908271435252365897792","buyTurnover":418.73054000,"direction":"BUY","price":10212.9400,"sellOrderId":"ESL90001033201908271435252373823301","sellTurnover":418.73054000,"symbol":"BTC/USDT","tickerOrderId":"EBL90001033201908271435252365897792","time":1566887725325,"type":"LIMIT_PRICE"},{"amount":0.0503,"buyOrderId":"EBL90001033201908271435057018345629","buyTurnover":513.84115900,"direction":"SELL","price":10215.5300,"sellOrderId":"ESL90001033201908271435057013939335","sellTurnover":513.84115900,"symbol":"BTC/USDT","tickerOrderId":"ESL90001033201908271435057013939335","time":1566887705740,"type":"LIMIT_PRICE"},{"amount":0.0264,"buyOrderId":"EBL90001033201908271435021525634485","buyTurnover":269.69580000,"direction":"SELL","price":10215.7500,"sellOrderId":"ESL90001033201908271435021525825240","sellTurnover":269.69580000,"symbol":"BTC/USDT","tickerOrderId":"ESL90001033201908271435021525825240","time":1566887702208,"type":"LIMIT_PRICE"},{"amount":0.0854,"buyOrderId":"EBL90001000201908261002303086842068","buyTurnover":881.97704000,"direction":"SELL","price":10327.6000,"sellOrderId":"ESL90001033201908262255047589440267","sellTurnover":881.97704000,"symbol":"BTC/USDT","tickerOrderId":"ESL90001033201908262255047589440267","time":1566831305419,"type":"LIMIT_PRICE"}],"msg":"success","msgType":"sub","respStatus":"ok","sub":"market.BTC_USDT.trade","transType":"all"}
+{
+    "code":"000000",
+    "data":[
+        {
+            "amount":0.017,
+            "buyOrderId":"EBL90001033201908271435509944348688",
+            "buyTurnover":173.55776,
+            "direction":"SELL",
+            "price":10209.28,
+            "sellOrderId":"ESL90001033201908271435509943603886",
+            "sellTurnover":173.55776,
+            "symbol":"BTC/USDT",
+            "tickerOrderId":"ESL90001033201908271435509943603886",
+            "time":1566887751048,
+            "type":"LIMIT_PRICE"
+        },
+        {
+            "amount":0.0022,
+            "buyOrderId":"EBL90001033201908271435483298289932",
+            "buyTurnover":22.461626,
+            "direction":"BUY",
+            "price":10209.83,
+            "sellOrderId":"ESL90001033201908271435483298867217",
+            "sellTurnover":22.461626,
+            "symbol":"BTC/USDT",
+            "tickerOrderId":"EBL90001033201908271435483298289932",
+            "time":1566887748360,
+            "type":"LIMIT_PRICE"
+        },
+        {
+            "amount":0.041,
+            "buyOrderId":"EBL90001033201908271435252365897792",
+            "buyTurnover":418.73054,
+            "direction":"BUY",
+            "price":10212.94,
+            "sellOrderId":"ESL90001033201908271435252373823301",
+            "sellTurnover":418.73054,
+            "symbol":"BTC/USDT",
+            "tickerOrderId":"EBL90001033201908271435252365897792",
+            "time":1566887725325,
+            "type":"LIMIT_PRICE"
+        },
+        {
+            "amount":0.0503,
+            "buyOrderId":"EBL90001033201908271435057018345629",
+            "buyTurnover":513.841159,
+            "direction":"SELL",
+            "price":10215.53,
+            "sellOrderId":"ESL90001033201908271435057013939335",
+            "sellTurnover":513.841159,
+            "symbol":"BTC/USDT",
+            "tickerOrderId":"ESL90001033201908271435057013939335",
+            "time":1566887705740,
+            "type":"LIMIT_PRICE"
+        },
+        {
+            "amount":0.0264,
+            "buyOrderId":"EBL90001033201908271435021525634485",
+            "buyTurnover":269.6958,
+            "direction":"SELL",
+            "price":10215.75,
+            "sellOrderId":"ESL90001033201908271435021525825240",
+            "sellTurnover":269.6958,
+            "symbol":"BTC/USDT",
+            "tickerOrderId":"ESL90001033201908271435021525825240",
+            "time":1566887702208,
+            "type":"LIMIT_PRICE"
+        },
+        {
+            "amount":0.0854,
+            "buyOrderId":"EBL90001000201908261002303086842068",
+            "buyTurnover":881.97704,
+            "direction":"SELL",
+            "price":10327.6,
+            "sellOrderId":"ESL90001033201908262255047589440267",
+            "sellTurnover":881.97704,
+            "symbol":"BTC/USDT",
+            "tickerOrderId":"ESL90001033201908262255047589440267",
+            "time":1566831305419,
+            "type":"LIMIT_PRICE"
+        }
+    ],
+    "msg":"success",
+    "msgType":"sub",
+    "respStatus":"ok",
+    "sub":"market.BTC_USDT.trade",
+    "transType":"all"
+}
 ```
 
 
@@ -203,7 +318,67 @@ symbol是交易对，例如：
 增量数据：
 
 ```
-{"code":"000000","data":[{"symbol":"BTC/USDT","amount":0.0085,"buyTurnover":86.78355500,"sellTurnover":86.78355500,"type":"LIMIT_PRICE","sellOrderId":"ESL90001033201908271435590024766422","buyUserId":16780003,"sellOrder":{"symbol":"BTC/USDT","amount":0.0085,"statusStr":"TRADING","orderId":"ESL90001033201908271435590024766422","machineNodeId":"8","useDiscount":"0","baseSymbol":"USDT","typeStr":"LIMIT_PRICE","tradedAmount":0.0085,"coinSymbol":"BTC","price":10209.8300,"directionStr":"SELL","time":1566887759001,"userType":"normal","turnover":86.78355500,"memberId":16780003},"buyOrderId":"EBL90001033201908271435590015143722","sellUserId":16780003,"tickerOrderId":"ESL90001033201908271435590024766422","price":10209.8300,"time":1566887759042,"buyOrder":{"symbol":"BTC/USDT","amount":0.0085,"statusStr":"TRADING","orderId":"EBL90001033201908271435590015143722","machineNodeId":"8","useDiscount":"0","baseSymbol":"USDT","typeStr":"LIMIT_PRICE","tradedAmount":0.0085,"coinSymbol":"BTC","price":10209.8300,"directionStr":"BUY","time":1566887759001,"userType":"normal","turnover":86.78355500,"memberId":16780003},"tradeId":"615917432256106496","direction":"SELL"}],"msg":"success","msgType":"data","sub":"market.BTC_USDT.trade","transType":"inc"}
+{
+    "code":"000000",
+    "data":[
+        {
+            "symbol":"BTC/USDT",
+            "amount":0.0085,
+            "buyTurnover":86.783555,
+            "sellTurnover":86.783555,
+            "type":"LIMIT_PRICE",
+            "sellOrderId":"ESL90001033201908271435590024766422",
+            "buyUserId":16780003,
+            "sellOrder":{
+                "symbol":"BTC/USDT",
+                "amount":0.0085,
+                "statusStr":"TRADING",
+                "orderId":"ESL90001033201908271435590024766422",
+                "machineNodeId":"8",
+                "useDiscount":"0",
+                "baseSymbol":"USDT",
+                "typeStr":"LIMIT_PRICE",
+                "tradedAmount":0.0085,
+                "coinSymbol":"BTC",
+                "price":10209.83,
+                "directionStr":"SELL",
+                "time":1566887759001,
+                "userType":"normal",
+                "turnover":86.783555,
+                "memberId":16780003
+            },
+            "buyOrderId":"EBL90001033201908271435590015143722",
+            "sellUserId":16780003,
+            "tickerOrderId":"ESL90001033201908271435590024766422",
+            "price":10209.83,
+            "time":1566887759042,
+            "buyOrder":{
+                "symbol":"BTC/USDT",
+                "amount":0.0085,
+                "statusStr":"TRADING",
+                "orderId":"EBL90001033201908271435590015143722",
+                "machineNodeId":"8",
+                "useDiscount":"0",
+                "baseSymbol":"USDT",
+                "typeStr":"LIMIT_PRICE",
+                "tradedAmount":0.0085,
+                "coinSymbol":"BTC",
+                "price":10209.83,
+                "directionStr":"BUY",
+                "time":1566887759001,
+                "userType":"normal",
+                "turnover":86.783555,
+                "memberId":16780003
+            },
+            "tradeId":"615917432256106496",
+            "direction":"SELL"
+        }
+    ],
+    "msg":"success",
+    "msgType":"data",
+    "sub":"market.BTC_USDT.trade",
+    "transType":"inc"
+}
 ```
 
 
