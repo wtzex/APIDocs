@@ -545,6 +545,7 @@ accessKey=ce2a18e0-dshs-4c44-4515-9aca67dd706e&amount=0.01&price=10000.00&priceT
 | accessKey | 是   | string | accessKey                                |
 | orderId   | 是   | string | 价格                                     |
 | no        | 是   | string | request no, 如果带，服务器返回相同的参数 |
+| symbol    | 是   | string | 交易对，/替换为-，例如BTC-USDT           |
 | sign      | 是   | string | 签名                                     |
 
  **返回示例**
@@ -587,6 +588,7 @@ accessKey=ce2a18e0-dshs-4c44-4515-9aca67dd706e&amount=0.01&price=10000.00&priceT
 | accessKey | 是   | string | accessKey                                |
 | orderId   | 是   | string | 价格                                     |
 | no        | 是   | string | request no, 如果带，服务器返回相同的参数 |
+| symbol    | 是   | string | 交易对，/替换为-，例如BTC-USDT           |
 | sign      | 是   | string | 签名                                     |
 
  **返回示例**

@@ -233,6 +233,7 @@ K线不提供websocket订阅接口，请使用HTTP接口获取
 	"optData": {
 		"accessKey": "",
 		"no": "",
+         "symbol": "BTC-USDT",
 		"timestamp": 1560994431098,
 		"orderId": "",
          "sign": ""
@@ -278,6 +279,7 @@ K线不提供websocket订阅接口，请使用HTTP接口获取
 	"optData": {
 		"accessKey": "",
 		"no": "",
+         "symbol": "BTC-USDT",
 		"timestamp": 1560994431098,
 		"orderId": "",
          "sign": ""
@@ -345,6 +347,7 @@ K线不提供websocket订阅接口，请使用HTTP接口获取
 	"sub": "market.order.myorders"
 	"optData": {
 		"accessKey": "",
+         "symbol": "BTC-USDT",
 		"timestamp": 1560994431098,
          "sign": ""
 	}
