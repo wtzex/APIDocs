@@ -632,7 +632,7 @@ accessKey=ce2a18e0-dshs-4c44-4515-9aca67dd706e&amount=0.01&price=10000.00&priceT
 
 | 字段名         | 类型    | 说明                                      |
 | :------------- | :------ | ----------------------------------------- |
-| amount         | string  | 订单号                                    |
+| amount         | string  | 委托量                                    |
 | baseSymbol     | string  | 目标货币，交易对"/"后的名称               |
 | coinSymbol     | string  | 交易货币，交易对"/"前的名称               |
 | completedTime  | string  | 完成时间，仅当order处于完成态的时候才有值 |
