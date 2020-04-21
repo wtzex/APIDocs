@@ -268,7 +268,7 @@ symbol是交易对，用_代替/，例如：
 
 ```
 {
-"sub": "market.btc_usdt.depth"
+"sub": "market.btc_usdt.ticker"
 }
 ```
 
@@ -276,7 +276,7 @@ symbol是交易对，用_代替/，例如：
 
 ```
 {
-"sub": "market.depth"
+"sub": "market.ticker"
 }
 ```
 
